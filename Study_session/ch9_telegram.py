@@ -5,7 +5,7 @@ INF = int(1e9)
 
 def dijkstra():
     num_city, routes, start = map(int, input().split())
-    graph = [[] for i in range(num_city + 1)]  # 여기 문법
+    graph = [[] for i in range(num_city + 1)]
     distance = [INF] * (num_city + 1)
     visited = [False] * (num_city + 1)
     queue = []
@@ -22,7 +22,6 @@ def dijkstra():
     print()
 
     while queue:
-        # 파이썬 이터레이터 종류
         time, node_num = heapq.heappop(queue)
         if visited[node_num] is False and time < distance[node_num]:
             distance[node_num] = time

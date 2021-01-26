@@ -26,6 +26,8 @@ def dijkstra():
         if visited[node_num] is False and time < distance[node_num]:
             distance[node_num] = time
             visited[node_num] = True
+        else:
+            continue
 
         # print('node_num : ' + str(node_num))
         for i in range(len(graph[node_num])):

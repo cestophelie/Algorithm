@@ -8,7 +8,6 @@ if __name__ == '__main__':
     for i in range(m//k):
         for j in range(k):
             total += arr[0]
-            i += 1
 
         total += arr[1]
 
